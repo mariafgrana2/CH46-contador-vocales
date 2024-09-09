@@ -5,3 +5,6 @@
 - Proyectamos películas
 - Chismeamos
 - Dormimos
+
+# Lo que cene el día de ayer
+Una galleta de smores de moon walk con una malteada de fresa.
