@@ -23,3 +23,15 @@ console.log(encontrarNumeroDeLetra("a","estefany"));
 function manejoDelEventoDeInputNombre(){
    console.log("Me estoy invocando");
 }
+
+function leerValorDeNombre(){
+ const inputNombre = document.getElementById("nombre");
+ return inputNombre.value;
+}
+
+function manejoDelEventoDeInputNombre(){
+  const nombre = leerValorDeNombre().toLowerCase();
+  console.log( nombre );
+  const numLetraA = encontrarNumeroDeLetra("a", nombre );
+  console.log("Núm letras A: " + numLetraA );
+}
