@@ -7,6 +7,7 @@ console.log("Conteo de vocales");
  @nombre {string} nombre a buscar la letra
  return número de letras encontradas
 */
+
 function encontrarNumeroDeLetra( letra, nombre ) {    
     let numeroDeLetras = 0;
     for(let index = 0; index < nombre.length; index++ ) {
@@ -18,20 +19,21 @@ function encontrarNumeroDeLetra( letra, nombre ) {
     return numeroDeLetras;
 }
 
-console.log(encontrarNumeroDeLetra("a","estefany"));
-
-function manejoDelEventoDeInputNombre(){
-   console.log("Me estoy invocando");
-}
 
 function leerValorDeNombre(){
- const inputNombre = document.getElementById("nombre");
- return inputNombre.value;
+ 	const inputNombre = document.getElementById("nombre");
+ 	return inputNombre.value;
+}
+
+function imprimirResultado( resultado ){
+  const paragraph = document.getElementById("vocales");
+  paragraph.innerHTML = resultado;
 }
 
 function manejoDelEventoDeInputNombre(){
   const nombre = leerValorDeNombre().toLowerCase();
   console.log( nombre );
   const numLetraA = encontrarNumeroDeLetra("a", nombre );
-  console.log("Núm letras A: " + numLetraA );
+  imprimirResultado("Num letras A: " + numLetraA);
 }
+
